@@ -1,0 +1,17 @@
+# 表示继承什么环境 就会拥有什么环境
+FROM node
+
+# LABEL单纯只是标识一下 没其他意思
+LABEL name = "vue-front"
+LABEL version = '1.0'
+
+#把当前容器的所有页面拷贝到镜像的nginx指定文件夹里
+COPY ./dist /usr/share/nginx/html
+COPY ./vue-front.conf /etc/nginx/conf.d
+
+
+#EXPOSE向外暴露一个端口
+EXPOSE 80
+
+#CMD也是运行一个命令，但是在docker run时运行
+CMD npm start
