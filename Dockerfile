@@ -12,6 +12,3 @@ COPY ./vue-front.conf /etc/nginx/conf.d
 
 #EXPOSE向外暴露一个端口
 EXPOSE 80
-
-#CMD也是运行一个命令，但是在docker run时运行
-CMD npm start
