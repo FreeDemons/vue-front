@@ -1,5 +1,5 @@
 # 表示继承什么环境 就会拥有什么环境
-FROM node
+FROM nginx
 
 # LABEL单纯只是标识一下 没其他意思
 LABEL name = "vue-front"
