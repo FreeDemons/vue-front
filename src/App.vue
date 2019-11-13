@@ -17,7 +17,7 @@ export default {
   },
 
   created () {
-    axios.get('http://localhost:3001/api/users').then(res => {
+    axios.get('http://localhost:3000/api/users').then(res => {
       this.users = res.data
     })
   }
