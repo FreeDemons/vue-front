@@ -17,7 +17,7 @@ export default {
   },
 
   created () {
-    axios.get('http://http://49.234.33.30:3000/api/users').then(res => {
+    axios.get('http://49.234.33.30:3000/api/users').then(res => {
       this.users = res.data
     })
   }
