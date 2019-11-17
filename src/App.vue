@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ul>
-      <li v-for="(user, index) in this.users" :key="index">{{user.id}}{{user.name}}</li>
+      <li v-for="(user, index) in this.users" :key="index">{{user.id}}-{{user.name}}</li>
     </ul>
   </div>
 </template>
