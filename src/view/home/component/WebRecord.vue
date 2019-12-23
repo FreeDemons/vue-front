@@ -30,6 +30,7 @@ a:focus {
 .web-record .record {
   color: rgba(0, 0, 0, 0.4);
   position: relative;
+  font-size: 14px;
 }
 .web-record .record::after {
   content: "";
