@@ -26,6 +26,11 @@ export default {
 
 <style>
 @import url("./style/reset.css");
+html,
+body,
+#app {
+  overflow: hidden;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
