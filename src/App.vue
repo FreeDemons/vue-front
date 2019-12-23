@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="(user, index) in this.users" :key="index">{{user.id}}-{{user.name}}</li>
-    </ul>
+    <home />
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import Home from './view/home'
+// import axios from 'axios'
 export default {
+  components: { Home },
   name: 'app',
   data () {
     return {
@@ -17,16 +17,17 @@ export default {
   },
 
   created () {
-    axios.get('/api/users').then(res => {
-      this.users = res.data
-    })
+    // axios.get('/api/users').then(res => {
+    //   this.users = res.data
+    // })
   }
 }
 </script>
 
 <style>
+@import url("./style/reset.css");
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
