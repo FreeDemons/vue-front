@@ -3,7 +3,7 @@ FROM nginx
 
 # LABEL单纯只是标识一下 没其他意思
 LABEL name = "vue-front"
-LABEL version = '2.0'
+LABEL version = '3.0'
 
 #把当前容器的所有页面拷贝到镜像的nginx指定文件夹里
 COPY ./dist /usr/share/nginx/html
