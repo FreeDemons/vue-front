@@ -3,11 +3,13 @@
     <p>
       <a class="record"
          target="_blank"
-         href="http://beian.miit.gov.cn">粤ICP备18069881号-1</a>
+         download
+         href="./download/yqh.pdf">粤ICP备18069881号-1</a>
     </p>
   </div>
 </template>
 <script>
+//http://beian.miit.gov.cn
 export default {
   name: 'webrecord'
 }

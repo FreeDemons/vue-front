@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <home />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './view/home'
 // import axios from 'axios'
 export default {
-  components: { Home },
   name: 'app',
   data () {
     return {
